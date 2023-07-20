@@ -3,6 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>MarvelApp</title>
   </head>
   <body>
@@ -12,48 +26,53 @@
         <ul>
           <li>comics</li>
           <li>peliculas</li>
+          <li><a href="#contacto">contacto</a></li>
         </ul>
         <ul>
-          <li><a href="/contacto">Contacto</a></li>
+          <li>>Contacto</li>
           <li>registro</li>
           <li>ingreso</li>
         </ul>
       </nav>
+      <div class="banner"></div>
     </header>
     <main>
-      <section>
-        <h2>Personajes</h2>
+      <section class="clase-personajes">
+        <h2 id="personajes">Personajes</h2>
         <div>
-          <img src="" alt="" />
           <img
             src="./images/133.jpg"
             width="200px"
             alt="imagen de spider-man"
           />
-          <p><b>Spider-man</b></p>
-          <p>Nombre: <em>Peter Parker</em></p>
-          <p>
-            Poderes: trepar paredes <br />
-            sentido aracnido
-          </p>
+          <div class="descripcion">
+            <p class="nombre-super">Spider-man</p>
+            <p>Nombre:Peter Parker</p>
+            <p>
+              Poderes: trepar paredes <br />
+              sentido aracnido
+            </p>
+          </div>
         </div>
         <div>
           <img src="./images/161.jpg" width="200px" alt="Wolverine" />
-          <p>Wolverine</p>
-          <p>Nombre: Logan</p>
-          <p>Poderes: regeneracion</p>
+          <div class="descripcion">
+            <p class="nombre-super">Wolverine</p>
+            <p>Nombre: Logan</p>
+            <p>Poderes: regeneracion</p>
+          </div>
         </div>
       </section>
     </main>
     <footer>
-      <h2>Contacto</h2>
+      <h2 id="contacto">Contacto</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere
         sequi, saepe, id laborum quae accusantium recusandae, culpa
         exercitationem deserunt sunt natus eligendi harum architecto eos fugit
         hic quaerat voluptates?
       </p>
-      <p>Copyright 2023</p>
+      <p>Copyright 2023 <i class="fa-brands fa-github"></i></p>
     </footer>
   </body>
 </html>

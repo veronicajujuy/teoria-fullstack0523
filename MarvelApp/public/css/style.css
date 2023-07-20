@@ -1,0 +1,49 @@
+:root {
+  --rojomarvel: #da1a27;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+nav {
+  background-color: var(--rojomarvel);
+  color: #fff;
+}
+
+main {
+  background-image: url("../images/imagenfondo.jpeg");
+  background-size: contain;
+  background-position: center;
+}
+
+.nombre-super {
+  font-size: 25px;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  line-height: 33px;
+}
+.clase-personajes {
+  text-align: center;
+}
+.descripcion {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.banner {
+  background-image: url("../images/marvelbanner.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+}
+
+.fa-brands {
+  font-size: 32px;
+}
