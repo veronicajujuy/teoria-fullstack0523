@@ -1,49 +1,189 @@
 :root {
   --rojomarvel: #da1a27;
 }
-
 * {
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 
-body {
-  font-family: "Montserrat Alternates", sans-serif;
-}
-
-nav {
+.navbar {
   background-color: var(--rojomarvel);
   color: #fff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
+.fa-bars {
+  background-color: #3a3a3a;
+  color: var(--rojomarvel);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.item {
+  display: none;
+}
+
+.logo {
+  width: 30%;
+  padding: 5px;
+  margin: 10px;
+}
+
+.item li {
+  list-style: none;
+}
+.item li a {
+  color: #fff;
+  text-decoration: none;
+}
 main {
-  background-image: url("../images/imagenfondo.jpeg");
-  background-size: contain;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+.fa-solid {
+  color: #ccc;
+}
+/*---CARDS---*/
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card {
+  display: block;
+  width: 80%;
+  font-size: 1.2rem;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  margin: 15px;
 }
 
-.nombre-super {
-  font-size: 25px;
-  font-weight: 700;
-  font-style: italic;
-  text-align: center;
-  line-height: 33px;
+.card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
 }
-.clase-personajes {
-  text-align: center;
+.card p {
+  font-size: 1rem;
 }
-.descripcion {
-  font-size: 12px;
-  line-height: 20px;
+
+.detalle {
+  padding: 15px;
 }
 
 .banner {
+  height: 200px;
   background-image: url("../images/marvelbanner.jpg");
   background-position: center;
   background-size: cover;
-  height: 150px;
+  /* background-attachment: fixed; */
+}
+h2.title {
+  color: #720e15;
+  font-size: 25px;
+  font-weight: 900;
 }
 
-.fa-brands {
-  font-size: 32px;
+footer {
+  background-color: #000;
+  color: #fff;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 20px;
+}
+
+.claseflex {
+  border: 2px solid black;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.footer-title {
+  margin-bottom: 10px;
+}
+
+.copyright {
+  font-size: 11px;
+  margin-top: 10px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 500px;
+  background-color: #9d9c9c;
+  padding: 20px;
+}
+.formulario input,
+select {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.boton {
+  background-color: var(--rojomarvel);
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #720e15;
+  box-shadow: #3a3a3a;
+}
+
+@media (min-width: 460px) {
+  .logo {
+    width: 200px;
+  }
+  .flex-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 40%;
+  }
+  .fa-bars {
+    display: none;
+  }
+  .item {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 968px) {
+  .nav {
+    justify-content: space-around;
+  }
+
+  .item {
+    display: flex;
+    width: 35%;
+    justify-content: space-evenly;
+  }
+  .flex-container {
+    align-items: flex-start;
+  }
+  .card {
+    width: 22%;
+  }
+  .card p {
+    font-size: 12px;
+  }
 }

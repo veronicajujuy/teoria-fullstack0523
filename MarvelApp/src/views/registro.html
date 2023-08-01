@@ -44,51 +44,44 @@
       <div class="banner"></div>
     </header>
     <main>
-      <section>
-        <h2 class="title">Personajes</h2>
-        <div class="flex-container">
-          <div class="card">
-            <img
-              src="./images/133.jpg"
-              width="200px"
-              alt="imagen de spider-man"
-            />
-            <div class="detalle">
-              <p><b>Spider-man</b></p>
-              <p>Nombre: <em>Peter Parker</em></p>
-              <p>Primera Aparicion: Amazing Fantasy #15</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="./images/161.jpg" width="200px" alt="Wolverine" />
-            <div class="detalle">
-              <p>Wolverine</p>
-              <p>Nombre: Logan</p>
-              <p>Primera aparición: Incredible Hulk Vol. 2 180</p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./images/140.jpg"
-              width="200px"
-              alt="imagen de spider-man"
-            />
-            <div class="detalle">
-              <p><b>Thor</b></p>
-              <p>Nombre: <em>Thor Odinsson</em></p>
-              <p>Primera aparición: Journey into Mystery #83 (August, 1962)</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="./images/835.jpg" width="200px" alt="Wolverine" />
-            <div class="detalle">
-              <p>Deadpool</p>
-              <p>Nombre: Wade Wilson</p>
-              <p>Primera aparición: New Mutants #98 (February, 1991)</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <form action="respuesta.js" method="post" class="formulario">
+        <label for="apellidoynombre">Apellido y Nombre:</label>
+        <input
+          type="text"
+          name="apellidoynombre"
+          id="apellidoynombre"
+          placeholder="Perez, Juan"
+        />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" />
+        <label for="fecha-nac">Fecha de Nacimiento:</label>
+        <input type="date" name="fecha-nac" id="fecha-nac" value="2005-01-01" />
+
+        <label>Metodo pago</label>
+        <label for="">Contado: </label>
+        <input type="radio" name="metodo-pago" id="" value="contado" />
+        <label for="">Tarjeta de credito: </label>
+        <input type="radio" name="metodo-pago" id="" value="tarjeta" />
+        <label for="">Mercado Pago: </label>
+        <input type="radio" name="metodo-pago" id="" value="mercadopago" />
+        <label for="ciudad">Ciudad:</label>
+        <select name="ciudad" id="ciudad">
+          <option value="san-salvador-jujuy">San Salvador de Jujuy</option>
+          <option value="palpala">Palpala</option>
+          <option value="san-pedro">San Pedro</option>
+          <option value="la-quiaca">La Quiaca</option>
+          <option value="el-camen" selected>El Carmen</option>
+          <option value="perico">Perico</option>
+        </select>
+        <label for="">foto</label>
+        <input type="file" name="" id="" />
+        <label for="pass">Contraseña</label>
+        <input type="password" name="pass" id="pass" />
+        <label for="confirmarpass">Confirmar Contraseña</label>
+        <input type="password" name="confirmarpass" id="confirmarpass" />
+        <button class="boton" type="reset">Borrar</button>
+        <button class="boton" type="submit">Enviar</button>
+      </form>
     </main>
     <footer>
       <h3 class="footer-title">Contacto</h3>
