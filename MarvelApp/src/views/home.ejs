@@ -45,51 +45,29 @@
     </header>
     <main>
       <section>
-        <h2 class="title">Personajes</h2>
+        <h2 class="title"><%= titulo %></h2>
         <div class="flex-container">
+          <!-- card -->
+          <% characters.map(item => {%>
           <div class="card">
             <img
-              src="./images/133.jpg"
+              src="<%= item.image %>"
               width="200px"
               alt="imagen de spider-man"
             />
             <div class="detalle">
-              <p><b>Spider-man</b></p>
-              <p>Nombre: <em>Peter Parker</em></p>
+              <p><b><%= item.name %></b></p>
+              <p>Nombre: <em><%= item.name %></em></p>
               <p>Primera Aparicion: Amazing Fantasy #15</p>
             </div>
           </div>
-          <div class="card">
-            <img src="./images/161.jpg" width="200px" alt="Wolverine" />
-            <div class="detalle">
-              <p>Wolverine</p>
-              <p>Nombre: Logan</p>
-              <p>Primera aparición: Incredible Hulk Vol. 2 180</p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./images/140.jpg"
-              width="200px"
-              alt="imagen de spider-man"
-            />
-            <div class="detalle">
-              <p><b>Thor</b></p>
-              <p>Nombre: <em>Thor Odinsson</em></p>
-              <p>Primera aparición: Journey into Mystery #83 (August, 1962)</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="./images/835.jpg" width="200px" alt="Wolverine" />
-            <div class="detalle">
-              <p>Deadpool</p>
-              <p>Nombre: Wade Wilson</p>
-              <p>Primera aparición: New Mutants #98 (February, 1991)</p>
-            </div>
-          </div>
+          <!-- card -->
+          <% })%>
         </div>
       </section>
+      <i class="fa-solid fa-circle-chevron-down posicion-fixed"></i>
     </main>
+
     <footer>
       <h3 class="footer-title">Contacto</h3>
       <p class="footer-parrafo">

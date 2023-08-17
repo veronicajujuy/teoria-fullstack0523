@@ -1,12 +1,13 @@
 const express = require("express");
-const app = express();
 const mainRouter = require("./routes/mainRoutes");
+const app = express();
+const PORT = 3040;
 
 app.set("view engine", "ejs");
 app.set("views", "./src/views");
-// para decirle a express donde se encuentran nuestros archivos estaticos imagenes, css
+
 app.use(express.static("public"));
 
 app.use(mainRouter);
 
-app.listen(3002, () => console.log("servidor escuchando en puerto 3002!"));
+app.listen(PORT, () => console.log(`Servidor corriendo en el puerto ${PORT}`));

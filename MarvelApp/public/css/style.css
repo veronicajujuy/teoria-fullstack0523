@@ -157,13 +157,46 @@ select {
     align-items: center;
   }
   .card {
-    width: 40%;
+    width: 30%;
+    max-height: 405px;
+    background-color: #fff;
   }
+  .card p {
+    font-size: 12px;
+  }
+
   .fa-bars {
     display: none;
   }
   .item {
     display: inline-block;
+  }
+}
+
+.posicion-fixed {
+  color: #720e15;
+  font-size: 32px;
+  position: fixed;
+  bottom: 150px;
+  right: 50px;
+  transition: all 450ms;
+}
+
+.posicion-fixed:hover {
+  color: #3a3a3a;
+  transform: rotate(-90deg);
+}
+
+.logo {
+  animation: logo 1s ease-in 2 alternate;
+}
+
+@keyframes logo {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
   }
 }
 
@@ -182,6 +215,7 @@ select {
   }
   .card {
     width: 22%;
+    max-height: 405px;
   }
   .card p {
     font-size: 12px;
