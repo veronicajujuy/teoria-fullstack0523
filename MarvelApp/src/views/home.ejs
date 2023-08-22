@@ -1,48 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>MarvelApp</title>
-  </head>
+  <%- include ("./partials/head") %>
   <body>
-    <header>
-      <nav class="navbar">
-        <img class="logo" src="./images/Marvellogo.png" alt="logo" />
-        <i class="fa-solid fa-bars"></i>
-        <ul class="item">
-          <li>comics</li>
-          <li>peliculas</li>
-        </ul>
-        <ul class="item">
-          <li><a href="/contacto">Contacto</a></li>
-          <li><a href="/registro">registro</a></li>
-          <li>ingreso <i class="fa-solid fa-right-to-bracket"></i></li>
-        </ul>
-      </nav>
-      <div class="banner"></div>
-    </header>
+    <%- include ("./partials/header") %>
     <main>
       <section>
         <h2 class="title"><%= titulo %></h2>
@@ -67,16 +27,6 @@
       </section>
       <i class="fa-solid fa-circle-chevron-down posicion-fixed"></i>
     </main>
-
-    <footer>
-      <h3 class="footer-title">Contacto</h3>
-      <p class="footer-parrafo">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere
-        sequi, saepe, id laborum quae accusantium recusandae, culpa
-        exercitationem deserunt sunt natus eligendi harum architecto eos fugit
-        hic quaerat voluptates?
-      </p>
-      <p class="copyright">Copyright 2023</p>
-    </footer>
+    <%- include ("./partials/footer") %>
   </body>
 </html>

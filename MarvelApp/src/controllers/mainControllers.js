@@ -7,10 +7,10 @@ const mainController = {
     res.render("home", { characters, titulo: "Superheroes API" });
   },
   showContact: (req, res) => {
-    res.sendFile(path.join(__dirname, "../views/contacto.html"));
+    res.render("contacto");
   },
   showRegitro: (req, res) => {
-    res.sendFile(path.join(__dirname, "../views/registro.html"));
+    res.render("registro");
   },
 };
 

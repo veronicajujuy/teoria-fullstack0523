@@ -9,4 +9,4 @@ app.use(express.static("public"));
 
 app.use(mainRouter);
 
-app.listen(3002, () => console.log("servidor escuchando en puerto 3002!"));
+app.listen(3000, () => console.log("servidor escuchando en puerto 3000!"));
